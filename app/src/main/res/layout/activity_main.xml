@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/navmenu"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/searchView"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/search"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageView"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/imageView"
+                android:text="@string/googleplaystore"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                style="@style/Menu"
+                android:id="@+id/apps"
+                android:text="@string/apps"
+                android:background="@drawable/apps"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                style="@style/Menu"
+                android:id="@+id/games"
+                android:text="@string/games"
+                android:background="@drawable/games"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                style="@style/Menu"
+                android:id="@+id/movies"
+                android:text="@string/movies"
+                android:background="@drawable/movies"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                style="@style/Menu"
+                android:id="@+id/music"
+                android:text="@string/music"
+                android:background="@drawable/music"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                style="@style/Menu"
+                android:id="@+id/books"
+                android:text="@string/books"
+                android:background="@drawable/books"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                style="@style/Menu"
+                android:id="@+id/news"
+                android:text="@string/news"
+                android:background="@drawable/news"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Header"
+                android:text="@string/popular_apps_game" />
+            <TextView style="@style/more" />
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/wea"
+                        android:src="@drawable/wea" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/wea" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/tiktok"
+                        android:src="@drawable/tiktok" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/tiktok" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/ig"
+                        android:src="@drawable/ig" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/ig" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/x"
+                        android:src="@drawable/x" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/x" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/fb"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/fb" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Header"
+                android:text="@string/new_game" />
+
+
+            <TextView style="@style/more" />
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/ml"
+                        android:src="@drawable/ml" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/ml" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/coc"
+                        android:src="@drawable/coc" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/coc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/gi"
+                        android:src="@drawable/gi" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/gi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:contentDescription="@string/ccs"
+                        android:src="@drawable/candycrush" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/ccs" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/Icon"
+                        android:src="@drawable/minecraft"
+                        android:contentDescription="@string/mc" />
+
+                    <TextView
+                        style="@style/Namaapp"
+                        android:text="@string/mc" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

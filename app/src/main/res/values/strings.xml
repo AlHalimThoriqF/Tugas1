@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tugas1</string>
+    <string name="tombol">tombol</string>
+    <string name="games">GAMES</string>
+    <string name="apps">APPS</string>
+    <string name="movies"><![CDATA[MOVIES & TV]]></string>
+    <string name="music">MUSIC</string>
+    <string name="books">BOOKS</string>
+    <string name="news">NEWS</string>
+    <string name="googleplaystore">Google Playstore</string>
+    <string name="popular_apps_game">Popular Apps + Games</string>
+    <string name="more">More...</string>
+    <string name="wea">WhatsApp</string>
+    <string name="tiktok">Tiktok</string>
+    <string name="fb">Facebook</string>
+    <string name="dc">Discord</string>
+    <string name="x">X</string>
+    <string name="ig">Instagram</string>
+    <string name="coc">Clash of Clans</string>
+    <string name="ml">Mobile Legends</string>
+    <string name="mc">Minecraft</string>
+    <string name="gi">Genshin Impact</string>
+    <string name="ccs">Candy Crush Saga</string>
+    <string name="new_game">New + Update Game</string>
+</resources>
